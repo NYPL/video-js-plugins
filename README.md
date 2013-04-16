@@ -1,15 +1,15 @@
 video-js-plugins
 ================
 
-Useful plug-ins for video-js players, including url timestamps, and multiple video sources
+Useful plug-ins for [Video.js](http://videojs.com/) players, including url timestamps, and multiple video sources
 
 ##Overview
 
-These are a set of plug-ins that extend the default VideoJS functionality. Current plug-ins include the ability to update the current URL with the current timestamp (#mm:ss) when you seek, and provide multiple video sources for the user to select from (e.g. multiple videos with different bitrates)
+These are a set of plug-ins that extend the default [Video.js](http://videojs.com/) functionality. Current plug-ins include the ability to update the current URL with the current timestamp (#mm:ss) when you seek, and provide multiple video sources for the user to select from (e.g. multiple videos with different bitrates)
 
 ##Setup
 
-Include the VideoJS libraries (tested with version 3.2.0) and plug-ins in the head as follows:
+Include the [Video.js](http://videojs.com/) libraries (tested with version 3.2.0) and plug-ins in the head as follows:
 
 ```html
 <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
