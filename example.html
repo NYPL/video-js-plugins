@@ -1,0 +1,49 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>VideoJS Plugins Example</title>
+  <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
+  <link href="css/videojs.plugin.css" rel="stylesheet">
+  <script src="http://vjs.zencdn.net/c/video.js"></script>
+  <script type="text/javascript" src="js/videojs.plugin.js"></script>
+  
+  <script type="text/javascript">
+    // ensure the web page (DOM) has loaded
+    document.addEventListener("DOMContentLoaded", function () {
+      
+      var renditions = [
+          {
+            "label": "142 kbps",
+            "url": "http://uds.ak.o.brightcove.com/1589608519001/1589608519001_2117525972001_050915D2slingpangachamSC.mp4"
+          }, {
+            "label": "305 kbps",
+            "url": "http://uds.ak.o.brightcove.com/1589608519001/1589608519001_2117526138001_050915D2slingpangachamSC.mp4"
+          }, {
+            "label": "484 kbps",
+            "url": "http://uds.ak.o.brightcove.com/1589608519001/1589608519001_2117491530001_050915D2slingpangachamSC.mp4"
+          }, {
+            "label": "776 kbps",
+            "url": "http://uds.ak.o.brightcove.com/1589608519001/1589608519001_2117526169001_050915D2slingpangachamSC.mp4"
+          }
+      ];
+        
+      var player = _V_('video-example-1', {
+        urltimestamp: true,
+        videoTracks: renditions,
+        videoTracksTitle: 'Quality'
+      });
+      
+  
+    }, false);
+  </script>
+</head>
+<body>
+  <video id="video-example-1" 
+    class="video-js vjs-default-skin" 
+    controls preload="auto"
+    width="960"
+    height="532"
+    src="http://uds.ak.o.brightcove.com/1589608519001/1589608519001_2117491530001_050915D2slingpangachamSC.mp4">
+  </video>
+</body>
+</html>
